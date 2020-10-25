@@ -25,6 +25,7 @@ public class Product {
     }
 
     public void setPrice (double price) {
-        this.price = price;
+        double tempPrice = Math.round(price*100);
+        this.price = tempPrice/100;
     }
 }
